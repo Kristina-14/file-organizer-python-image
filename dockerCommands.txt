@@ -1,0 +1,16 @@
+### For Developers
+1. Check if your Docker Engine is up and running
+docker -v   
+
+2. Build the image
+docker build -t file_organizer .
+
+3. Run the freshly created image in a new conatiner
+docker run --name pythonImage file_organizer 
+
+### For Users
+1. Simple pull the file_organizer image and it will work
+docker pull file_organizer
+
+2. Remmber to update the path
+Example: path = 'C:\DemoFolder' 
