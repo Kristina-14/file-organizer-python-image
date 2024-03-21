@@ -8,6 +8,12 @@ docker build -t file_organizer .
 3. Run the freshly created image in a new conatiner
 docker run --name pythonImage file_organizer 
 
+### Steps of pushing the image into docker hub
+1. docker login
+2. docker build -t file_organizer:latest . [build the image with latest tag]
+3. docker tag file_organizer:latest <userName>/pyfileorg:latest [tag the image with repo name and username. Replace userName with your dockerHub username]
+4. docker push <userName>/pyfileorg:latest [push the image into docker hub]
+
 ### For Users
 1. Simple pull the file_organizer image and it will work
 docker pull file_organizer
